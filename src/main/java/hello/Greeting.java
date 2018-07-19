@@ -3,13 +3,13 @@ package hello;
 public class Greeting {
 
 
-    private final String greeting;
+    private final String content;
 
     public Greeting(String content) {
-        this.greeting = content;
+        this.content = content;
     }
 
     public String getContent() {
-        return greeting;
+        return content;
     }
 }
