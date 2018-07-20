@@ -2,3 +2,4 @@ hello\Application.class
 hello\Greeting.class
 hello\GreetingController.class
 hello\StaticFunctions.class
+hello\TesttableEntity.class

@@ -1,6 +1,5 @@
 package hello;
 
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Greeting {
