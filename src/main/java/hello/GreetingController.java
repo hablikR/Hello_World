@@ -1,7 +1,7 @@
 package hello;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.web.bind.annotation.*;
-
 
 @RestController
 public class GreetingController {
@@ -23,9 +23,5 @@ public class GreetingController {
         return new Greeting(String.format(template, StaticFunctions.CapitalFirstLetter(name)));
     }
 
-    @RequestMapping("/api/db")
-    public String returnDb() {
-        return new TesttableEntity().getName();
-    }
 
 }
