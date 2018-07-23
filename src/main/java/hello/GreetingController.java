@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 public class GreetingController {
 
     private static final String template = "Hello, %s!";
+    private static  StaticFunctions Sf = new StaticFunctions();
 
     @RequestMapping("/")
     public String index() {
@@ -20,7 +21,7 @@ public class GreetingController {
 
     @RequestMapping("/api/greeting/{userName}")
     public Greeting greetingUser(@PathVariable(value="userName") String name) {
-        return new Greeting(String.format(template, StaticFunctions.CapitalFirstLetter(name)));
+        return new Greeting(String.format(template, Sf.CapitalFirstLetter(name)));
     }
 
 
